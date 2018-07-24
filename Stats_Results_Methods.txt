@@ -1,0 +1,12 @@
+Methods:
+
+Node-Network statistics and the number of surrounding POI (500m radius) were calculated for every McDonalds in the U.S. These numbers were run through a multiple linear regression analysis for correlation with that same point's "Walkscore" (as evaluated by existing sources of "WalkScore"s, namely walkscore.com). These Multiple linear regressions were run in batches of 1000 random samples of the McDonalds locations.
+
+The resulting average (of 10 seperate tests) correlation coefficients between WS and the various node-network statistics of statistical significance are as follows:
+
+
+
+edge_density_km	street_density_km	node_density_km	n (number of nodes)	intersection_density_km	POI (within 500m radius)
+0.467682748	0.462334519	0.308359548	0.308359548	0.307505255	0.564824
+
+These values informed how to create a new equation for WS which is based on node-network stats and POIs.
